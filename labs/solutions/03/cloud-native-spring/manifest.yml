@@ -3,7 +3,7 @@ applications:
 - name: cloud-native-spring
   random-route: true
   instances: 1
-  path: ./target/cloud-native-spring-0.0.1-SNAPSHOT.jar
+  path: ./target/cloud-native-spring-03-solution-0.0.1-SNAPSHOT.jar
   buildpacks:
   - java_buildpack_offline
   env:

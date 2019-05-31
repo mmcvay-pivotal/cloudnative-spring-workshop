@@ -1,3 +1,4 @@
+/**
 package io.pivotal;
 
 import java.util.Random;
@@ -21,3 +22,4 @@ public class FlappingHealthIndicator implements HealthIndicator {
         }
     }
 }
+*/
