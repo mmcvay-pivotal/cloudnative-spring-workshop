@@ -480,32 +480,35 @@ cf stop cloud-native-spring
 +
 [source,bash]
 ---------------------------------------------------------------------
-cf marketplace -s p.mysql
+cf marketplace -s cleardb
 ---------------------------------------------------------------------
 +
 Expected output:
 +
 [source,bash]
 ---------------------------------------------------------------------
-Getting service plan information for service p.mysql as cphillipson@pivotal.io...
+Getting service plan information for service cleardb as ...
 OK
 
-service plan   description                                            free or paid
-db-small       This plan provides a small dedicated MySQL instance.   free
+service plan   description                                             free or paid
+spark          Great for getting started and developing your apps       free
+boost          Best for light production or staging your applications   paid
+amp            For apps with moderate data requirements                 paid
+shock          Designed for apps where you need real MySQL reliability, power and throughput  paid
 ---------------------------------------------------------------------
 
-. Let's create an instance of `p.mysql` with `db-small` plan, e.g.
+. Let's create an instance of `cleardb` with `spark` plan, e.g.
 +
 [source,bash]
 ---------------------------------------------------------------------
-cf create-service p.mysql db-small mysql-database
+ cf create-service cleardb spark mysql-database
 ---------------------------------------------------------------------
 +
 Expected output:
 +
 [source,bash]
 ---------------------------------------------------------------------
-Creating service instance mysql-database in org zoo-labs / space development as cphillipson@pivotal.io...
+Creating service instance mysql-database in org ... space ... as ...
 OK
 ---------------------------------------------------------------------
 +
@@ -541,7 +544,7 @@ Expected output:
 +
 [source,bash]
 ---------------------------------------------------------------------
-Binding service mysql-database to app cloud-native-spring in org zoo-labs / space development as cphillipson@pivotal.io...
+Binding service mysql-database to app cloud-native-spring in org .... / space ... as ...
 OK
 ---------------------------------------------------------------------
 +
