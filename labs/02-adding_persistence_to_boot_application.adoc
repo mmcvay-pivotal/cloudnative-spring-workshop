@@ -192,7 +192,7 @@ Next we'll import some data.
 
 == Importing Data
 
-. Copy the https://raw.githubusercontent.com/Pivotal-Field-Engineering/devops-workshop/master/labs/import.sql[import.sql] file found in *devops-workshop/labs/* to _devops-workshop/labs/my_work/cloud-native-spring/src/main/resources/db/migration_. Rename the file to be +V1_1__seed_data.sql+. (This is a small subset of a larger dataset containing all of the postal codes in the United States and its territories). 
+. Copy the https://github.com/mmcvay-pivotal/cloudnative-spring-workshop/blob/master/labs/import.sql[import.sql] file found in *devops-workshop/labs/* to _devops-workshop/labs/my_work/cloud-native-spring/src/main/resources/db/migration_. Rename the file to be +V1_1__seed_data.sql+. (This is a small subset of a larger dataset containing all of the postal codes in the United States and its territories). 
 
 . Restart the application.
 +
